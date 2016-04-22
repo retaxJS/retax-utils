@@ -4,17 +4,18 @@
   "description": "Utils library for retax modules",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
-  "typings": "libTs/src/index.d.ts",
+  "typings": "libTs/index.d.ts",
   "scripts": {
-    "prepublish": "npm test && builder run build",
-    "typings": "builder run typings:install",
     "build": "builder run build",
-    "start": "builder run build:commonjs:watch",
-    "test:once": "builder run test:all",
-    "tdd": "builder run test:all:watch",
+    "lint": "builder run lint",
+    "prepublish": "npm test && builder run build",
     "pretest": "npm run typings && builder run lint",
+    "preversion": "npm test && builder run build",
+    "start": "builder run build:commonjs:watch",
+    "tdd": "builder run test:all:watch",
+    "test:once": "builder run test:all",
     "test": "builder run test:all:coverage",
-    "lint": "builder run lint"
+    "typings": "builder run typings:install"
   },
   "repository": {
     "type": "git",
