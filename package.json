@@ -1,0 +1,46 @@
+{
+  "name": "retax-utils",
+  "version": "0.0.0",
+  "description": "Utils library for retax modules",
+  "main": "lib/index.js",
+  "jsnext:main": "es/index.js",
+  "typings": "libTs/src/index.d.ts",
+  "scripts": {
+    "prepublish": "npm test && builder run build",
+    "typings": "builder run typings:install",
+    "build": "builder run build",
+    "start": "builder run build:commonjs:watch",
+    "test:once": "builder run test:all",
+    "tdd": "builder run test:all:watch",
+    "pretest": "npm run typings && builder run lint",
+    "test": "builder run test:all:coverage",
+    "lint": "builder run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/retaxJS/retax-utils"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "framework",
+    "universal",
+    "retax",
+    "utils"
+  ],
+  "author": "Thomas Hourlier <thomas.hourlier@cnode.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/retaxJS/retax-utils/issues"
+  },
+  "homepage": "https://github.com/retaxJS/retax-utils",
+  "dependencies": {
+    "builder-ts-library": "~0.0.6",
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "builder": "^2.9.1",
+    "builder-ts-library-dev": "~0.0.6",
+    "redux": "^3.4.0"
+  }
+}

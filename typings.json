@@ -1,0 +1,11 @@
+{
+  "name": "seed-component",
+  "version": false,
+  "dependencies": {
+    "lodash": "registry:npm/lodash#4.0.0+20160416211519"
+  },
+  "ambientDependencies": {
+    "jest": "registry:dt/jest#0.9.0+20160319033628"
+  },
+  "ambientDevDependencies": {}
+}
