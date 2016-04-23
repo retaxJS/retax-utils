@@ -37,11 +37,14 @@
   "homepage": "https://github.com/retaxJS/retax-utils",
   "dependencies": {
     "builder-ts-library": "~0.0.6",
-    "lodash": "^4.6.1"
+    "lodash": "^4.6.1",
+    "redux": "^3.4.0"
   },
   "devDependencies": {
     "builder": "^2.9.1",
-    "builder-ts-library-dev": "~0.0.6",
+    "builder-ts-library-dev": "~0.0.6"
+  },
+  "peerDependencies": {
     "redux": "^3.4.0"
   }
 }
