@@ -37,7 +37,7 @@
   "homepage": "https://github.com/retaxJS/retax-utils",
   "dependencies": {
     "builder-ts-library": "~0.0.6",
-    "inversify": "2.0.0-beta.10",
+    "inversify": "2.0.0",
     "inversify-dts": "3.0.0",
     "lodash": "^4.6.1",
     "redux": "^3.4.0"
